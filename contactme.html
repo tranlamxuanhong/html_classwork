@@ -1,1 +1,51 @@
 <!DOCTYPE html>
+<html lang="en">
+<title>Contact Me</title>
+<body>
+  <h1>Contact Me</h1>
+  <hr>
+  <nav>
+    <a href="index.html">Home</a>
+  </nav>
+  <hr>
+  <h2>Information Request</h2>
+  <form action="submit.html" method="POST">
+  <label for="firstname">First Name: </label><br/>
+  <input type="text" id="firstname"><br/>
+  <label for="lastname">Last Name:</label><br/>
+  <input type="text" id="lastname"><br/>
+  <label for="phonenumber">Phone Number</label><br/>
+  <input type="tel" id="phonenumber" placeholder="(###)###-####"><br/>
+  <label>Best time to call</label><br/>
+  <select name="besttimetocall">
+    <option value="morning">Morning(8AM to 12PM Eastern)</option>
+    <option value="afternoon">Afternoon(12PM to 5PM Eastern)</option>
+    <option value="evening">Evening(5PM to 8PM Eastern)</option>
+  </select><br/>
+
+  <fieldset>
+    <legend>I am interested in (check all that apply)</legend>
+    <input type="checkbox" name="checkbox1" id="frontend" value="frontend">
+    <label for="frontend"> Front-end Web Development</label><br/>
+    <input type="checkbox" name="checkbox2" value="backend" id="backend">
+    <label for="backend">Back-end Web Development</label><br/>
+    <input type="checkbox" name="checkbox3" id="database" value="database">
+    <label for="database">Database Design</label>
+  </fieldset>
+  <fieldset>
+    <legend>I have filled in the client questionaire form:</legend>
+    <input type="radio" name="questionaire" value="yes" id="yes">
+    <label for="yes">Yes</label>
+    <input type="radio" name="questionaire" value="no" id="no">
+    <label for="no">No</label>
+  </fieldset>
+  <label>Additional Information:</label><br/>
+  <textarea name="information" cols="50" rows="5"></textarea><br/>
+  <input type="submit" value="submit">
+</form>
+
+
+
+
+</body>
+</html>
